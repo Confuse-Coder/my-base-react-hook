@@ -2,6 +2,7 @@ import './Child.scss';
 
 const WeatherState = (props) => {
   const weatherState = props.weatherState;
+  console.log('check weatherState >>>', weatherState);
   const allWeatherState = {
     Snow: 'sn',
     Sleet: 'sl',

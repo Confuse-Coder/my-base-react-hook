@@ -1,11 +1,11 @@
 import { useRef, useState } from 'react';
 import OtpInput from 'react-otp-input';
-import CountDown from './CountDown';
 import CountDownAnimation from './CountDownAnimation';
 
 const InputOTP = (props) => {
   const chilRef = useRef();
   const [otp, setOtp] = useState('');
+
   const handleChange = (otp) => {
     setOtp(otp);
     props.setUserOTPParent(otp);
